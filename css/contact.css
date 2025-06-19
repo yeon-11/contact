@@ -1,0 +1,43 @@
+.fs24 {
+  font-size: 24px;
+}
+
+.fs28 {
+  font-size: 28px;
+}
+
+.fs48 {
+  font-size: 48px;
+}
+
+.contact-label, .contact-title {
+  color: #333333;
+}
+
+.contact-info, .contact-txt {
+  color: #4d4d4d;
+}
+
+.section_address {
+  display: none;
+}
+
+.center {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.contact-label {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.contact-hello {
+  margin-top: 75px;
+}
+
+.contact-container {
+  margin: 100px auto;
+  border: 1px solid red;
+}/*# sourceMappingURL=contact.css.map */

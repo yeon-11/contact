@@ -1,0 +1,112 @@
+//네비게이션
+    header{
+        width: 100vw;
+        height: 100px;
+        // background-color: gray;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-bottom: 50px;
+
+        .home-logo-k{
+            width: 70px;
+            height: 70px;
+            margin-left: 150px;
+            position: absolute;
+            left: 0;
+        }
+        
+        .menu-toggle{
+            display: none;
+            width: 30px;
+            height: 30px;
+            position: fixed;
+            right: 30px;
+            top: 30px;
+            border: none;
+            cursor: pointer;
+            z-index: 11;
+        }
+
+        ul{
+            display: flex;
+            li{
+                a{
+                    display: block;
+                    margin: 0 20px;
+                }
+                a:hover{color: #31ceee;}
+            }
+        }
+
+    }
+
+// 모바일 미디어쿼리
+@media screen and (max-width: 767px){
+    body{
+        header{
+            margin-bottom: 0px;
+            .home-logo-k{display: none;}
+            .menu-toggle{display: block;}
+            
+            .home-nav-bar{
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 40%;
+            height: 100vh;
+            background-color: rgba(49, 206, 238, 0.9);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding-left: 20px;
+            transition: right 0.3s ease;
+            z-index: 10;
+
+            li{
+                margin: 20px 0;
+                a {
+                    font-size: 16px;
+                    color: white;
+                }
+                a:hover{color: white;}
+            }
+
+            &.active {right: 0;}
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px){
+    body{
+        header{
+            .home-logo-k{display: none;}
+            
+        }
+    }
+}
+
+
+
+
+// 이미지삽입
+.logo-b-trans{background: url(../img/logo/logo-b-trans.svg) no-repeat center center/cover;}
+.logo-w{background: url(../img/logo/logo-w.svg) no-repeat center center/cover;}
+.logo-k{background: url(../img/logo/logo-k.svg) no-repeat center center/cover;}
+.menu{background: url(../img/icon/menu.svg) no-repeat center center / contain;}
+
+.instagram{background: url(../img/icon/instagram-w.svg) no-repeat center center/cover;}
+.youtube{background: url(../img/icon/youtube-w.svg) no-repeat center center/cover;}
+.x{background: url(../img/icon/x-out-w.svg) no-repeat center center/cover;}
+.facebook{background: url(../img/icon/facebook-w.svg) no-repeat center center/cover;}
+.store{background: url(../img/icon/store-w.svg) no-repeat center center/cover;}
+
+.instagram:hover{background: url(../img/icon/instagram-b.svg) no-repeat center center/cover;}
+.youtube:hover{background: url(../img/icon/youtube-b.svg) no-repeat center center/cover;}
+.x:hover{background: url(../img/icon/x-out-b.svg) no-repeat center center/cover;}
+.facebook:hover{background: url(../img/icon/facebook-b.svg) no-repeat center center/cover;}
+.store:hover{background: url(../img/icon/store-b.svg) no-repeat center center/cover;}
