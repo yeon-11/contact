@@ -39,3 +39,41 @@ function includeHTML(){
         }
     }
 }
+
+
+
+// 스케줄 js
+document.addEventListener('DOMContentLoaded', function () {
+  const categoryMap = {
+    '전체보기': ['radio_sc', 'music_sc', 'media_sc', 'movie_sc'],
+    '라디오': ['radio_sc'],
+    '음악': ['music_sc'],
+    '방송': ['media_sc'],
+    '영화': ['movie_sc'],
+  };
+
+  // 모든 드롭다운 항목에 클릭 이벤트 연결
+  document.querySelectorAll('.dropdown-item').forEach(item => {
+    item.addEventListener('click', function (e) {
+      e.preventDefault(); // a 태그 기본 동작 막기
+
+      const selected = this.textContent.trim(); // 선택된 텍스트
+      const showClasses = categoryMap[selected] || []; // 보여줄 클래스 목록
+
+      // 모든 day-text 숨기기
+      document.querySelectorAll('.day-text').forEach(el => {
+        el.style.display = 'none';
+      });
+
+      // 선택된 카테고리만 보여주기
+      if (showClasses.length > 0) {
+        showClasses.forEach(cls => {
+          document.querySelectorAll(`.${cls}`).forEach(el => {
+            el.style.display = 'block';
+          });
+        });
+      }
+    });
+  });
+});
+
