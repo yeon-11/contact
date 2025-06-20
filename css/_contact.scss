@@ -1,4 +1,4 @@
-/* ===== 폰트 크기 ===== */
+// 폰트 크기
 .fs24 {
     font-size: clamp(12px, 3vw, 24px);
 }
@@ -11,7 +11,7 @@
     font-size: clamp(28px, 5vw, 48px);
 }
 
-/* ===== 텍스트 색상 ===== */
+// 텍스트 색상
 .contact-label,
 .contact-title {
     color: #333;
@@ -22,7 +22,7 @@
     color: #4d4d4d;
 }
 
-/* ===== 공통 정렬 및 레이아웃 ===== */
+// 공통 정렬 및 레이아웃
 .center {
     width: 100%;
     max-width: 1280px;
@@ -30,7 +30,7 @@
     transition: all 0.3s ease;
 }
 
-/* ===== 콘텐츠 여백 스타일 ===== */
+// 콘텐츠 여백 스타일
 .contact-label {
     margin: clamp(10px, 5vw, 50px) 0 clamp(10px, 2vw, 20px);
     padding-left: clamp(10px, 5vw, 60px);
@@ -78,7 +78,7 @@
     width: 100%;
     max-width: 300px;
     margin-bottom: clamp(40px, 8vw, 100px);
-    padding-left: clamp(10px, 5vw, 60px);
+    padding-left: clamp(15px, 5vw, 60px);
     text-align: start;
     transition: all 0.3s ease;
 }
@@ -90,7 +90,7 @@
     transition: all 0.3s ease;
 }
 
-/* ===== 아이콘 정렬 & 간격 ===== */
+// 아이콘 정렬 & 간격
 .contact-icons {
     display: flex;
     flex-wrap: wrap;
@@ -106,19 +106,19 @@
     transition: all 0.3s ease;
 }
 
-/* ===== 카카오맵 여백 ===== */
+// 카카오맵 여백
 .root_daum_roughmap {
     margin-bottom: clamp(30px, 5vw, 50px);
 }
 
 .section_address {
-    display: none;
+    display: none !important;
 }
 
 
 // 미디어쿼리
-/* ===== PC/웹크기 ===== */
-@media (min-width: 1024px) {
+// PC/웹크기
+@media (min-width: 1081px) {
     .center {
         width: 100%;
         margin: 0 auto;
@@ -134,8 +134,8 @@
     }
 }
 
-/* ===== 태블릿: 768 ~ 1199px ===== */
-@media (min-width: 768px) and (max-width: 1199px) {
+// 태블릿: 768 ~ 1080px
+@media screen and (min-width:768px) and (max-width: 1080px) {
     .contact-container {
         padding: 10px;
     }
@@ -158,8 +158,8 @@
     }
 }
 
-/* ===== 모바일: 최대 767px ===== */
-@media (max-width: 767px) {
+// 모바일: 최대 767px
+@media screen and (max-width: 767px) {
     .contact-container {
         padding: 0 20px;
     }
@@ -180,8 +180,6 @@
     .row {
         display: block !important;
         margin-bottom: 30px !important;
-        // margin-left: 0 !important;
-        // margin-right: 0 !important;
     }
 
     .col {

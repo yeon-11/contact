@@ -128,10 +128,22 @@ mark{
     }
   }
 }
-/*수정된 사항
-antenna 섹션 1 
-타이틀 margin-top 50px
-이미지 기준으로 margin 상하 20px
-섹션 1 <-> 2 사이 간경 70px
-센션 2 margin-bottom 100px
+/* 센터
+@media (max-width: 767px) {
+  .ab_wrap{
+    margin: 0 20px !important;
+    .ab_logo_bg {
+        width: 80% !important;
+        height: 700px !important;
+        margin-left: 15%;
+        background: url(../img/about/ab_center.png) no-repeat !important;
+        background-size: cover !important;
+        background-position: center center !important;
+    }
+    .ab_items_wrap{
+        margin-left: 0 !important;
+        transition: all 0.3s;
+    }
+  }
+}
 */

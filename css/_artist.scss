@@ -1,0 +1,118 @@
+.container{
+    width:1280;
+    max-width: 1280px;
+    //border:1px solid blue;
+    padding: 0;
+}
+
+// 아티스트 이름
+.kakao-b{
+    font-size:20px;
+    padding: 0;
+    height: 50px;
+    line-height: 50px;
+}
+
+// 카드 관련 설정
+.card-body{
+     padding: 0;
+}
+.card{
+    border:none;
+    border-radius: 0;
+    width:100%;
+    height: auto;
+    margin:0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.card-img-bottom:hover ~ .card-overlay {
+    opacity: 1;
+}
+.card-img-bottom:hover ~ .card-text-overlay {
+    opacity: 1;
+}
+
+// 호버 시 배경
+.card-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(34, 34, 34, .3);
+    border: 10px solid #fff;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: all .5s;
+    z-index: 1;
+}
+// 호버 시 텍스트
+.card-text-overlay{
+    position: absolute;
+    text-align: right;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 2;
+}
+.kakao-b.kor{
+    font-size: 24px;
+}
+.arial-b.eng{
+    font-size: 14px;
+}
+
+
+// 이미지 관련 설정
+.card-img-bottom{
+    border-radius: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    z-index: 0;
+
+    &.h520 {height: 520px;}
+    &.h389 {height: 389px;}
+    &.h310 {height: 310px;}
+    &.h343 {height: 343px;}
+
+    &.h297 {height: 297px;}
+    &.h418 {height: 418px;}
+    &.h410 {height: 410px;}
+    &.h437 {height: 437px;}
+
+    &.h603 {height: 603px;}
+    &.h384 {height: 384px;}
+    &.h284 {height: 284px;}
+    &.h291 {height: 291px;}
+
+    &.h381 {height: 381px;}
+    &.h364 {height: 364px;}
+    &.h355 {height: 355px;}
+    &.h462 {height: 462px;}
+}
+
+// 이미주, 유희열 별도 설정
+.card_left2{
+    width:135px !important;
+}
+
+
+.left1 .card,
+.left2 .card,
+.left3 .card,
+.left4 .card {
+    display: inline-block;
+    float: none;
+}
+
+/* 미디어 쿼리 */
+@media (max-width: 991px) {
+    .card-img-bottom {
+    height: auto !important;
+  }
+}
